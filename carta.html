@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahei</title>
+    <link rel="icon" href="videos/milicethimg1.jpg">
+
+    <link rel="stylesheet" href="carta.css">
+</head>
+<body>
+    <div class="content">
+        <div class="video-container">
+            <video class="responsive-video" controls>
+                <source src="videos/LisV1.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
+        
+        <div class="interaction-container">
+            <input type="date" id="dateInput">
+            <button id="confirmDateButton">¿Fecha que cumplimos "años" de novios y desde qué año?</button>
+            <div id="gameContainer" class="hidden">
+                <p>Elige una opción y descubre tu sorpresa:</p>
+                <button class="game-button" onclick="selectOption('option1')">Opción 1</button>
+                <button class="game-button" onclick="selectOption('option2')">Opción 2</button>
+                <button class="game-button" onclick="selectOption('option3')">Opción 3</button>
+            </div>
+            <p id="message" class="hidden"></p>
+        </div>
+    </div>
+
+    <script src="mensaje.js"></script>
+</body>
+</html>
